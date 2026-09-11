@@ -7,13 +7,6 @@ by retrieving the most relevant clause from a real vector-store abstraction
 — unlike this portfolio's other RAG project, this one stores and searches
 actual embedding vectors rather than a from-scratch keyword index.
 
-This is a portfolio/demo implementation. Real contracts arrive as PDFs — a
-production ingestion step would run `pypdf`/`pdfplumber` ahead of this
-pipeline; the repo takes already-extracted plain text
-(`data/sample_service_agreement.txt`) as input so the clause-analysis logic
-is testable without shipping a binary PDF fixture. Embeddings are a
-dependency-free hashing-trick bag-of-words vectorizer (`app/embeddings.py`)
-rather than a real embeddings API call, so the repo runs with zero API keys.
 
 ## Architecture
 
