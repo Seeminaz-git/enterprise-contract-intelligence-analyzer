@@ -1,0 +1,10 @@
+fastapi>=0.110
+uvicorn[standard]>=0.29
+pydantic>=2.6
+pytest>=8.0
+
+# Production upgrade path (not required for the in-memory demo):
+# qdrant-client>=1.9
+# psycopg2-binary>=2.9   # for pgvector
+# pypdf>=4.0              # for real PDF text extraction
+# llama-index>=0.10
